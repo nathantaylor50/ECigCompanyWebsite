@@ -29,6 +29,10 @@ section.jumbotron {
   margin: 0;
 }
 
+section.jumbotron .container {
+  padding: 250px;
+}
+
 section.jumbotron:before {
   content: "";
   position: absolute;
@@ -42,5 +46,4 @@ section.jumbotron:before {
 
 section.jumbotron .container {
   position: relative;
-  padding: 250px;
 }
