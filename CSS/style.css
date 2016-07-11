@@ -30,7 +30,7 @@ section.jumbotron {
 }
 
 section.jumbotron .container {
-  padding: 250px;
+  padding: 250px 0;
 }
 
 section.jumbotron:before {
