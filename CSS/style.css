@@ -1,0 +1,48 @@
+.gi-lg {font-size: 5em;}
+
+.btn {
+  border-width: 0;
+  border-radius: 3px;
+  color: #2B3335;
+}
+
+section {
+  padding: 150px 0;
+  color: #2B3335;
+}
+
+.section-services {
+  background: #EBEDEC;
+}
+
+.section-contact {
+  background: #C5B1A7;
+}
+
+section.jumbotron {
+  background-image: url("../Images/ecig.jpg");
+  background-size: cover;
+  background-position: center center;
+  color: white;
+  position: relative;
+  margin: 0;
+}
+
+section.jumbotron .container {
+  padding: 200px 0;
+}
+
+section.jumbotron:before {
+  content: "";
+  position: absolute;
+  opacity: .5;
+  background: #000;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+section.jumbotron .container {
+  position: relative;
+}
