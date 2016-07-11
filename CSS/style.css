@@ -6,6 +6,7 @@
   color: #2B3335;
 }
 
+
 section {
   padding: 150px 0;
   color: #2B3335;
@@ -28,10 +29,6 @@ section.jumbotron {
   margin: 0;
 }
 
-section.jumbotron .container {
-  padding: 335.5px 0;
-}
-
 section.jumbotron:before {
   content: "";
   position: absolute;
@@ -45,4 +42,5 @@ section.jumbotron:before {
 
 section.jumbotron .container {
   position: relative;
+  padding: 250px; 
 }
