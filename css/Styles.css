@@ -29,7 +29,7 @@ html, body {
     text-align: center;
   }
   #header img {
-    margin: 20% auto 0;
+    margin: 40% auto 0;
   }
   #social {
     text-align: center;
@@ -43,10 +43,18 @@ html, body {
   #who img {
     margin-top: 50%;
   }
+  #gallery .modal-content button {
+    padding: 2px 4px;
+    font-size: 1em;
+  }
+  #gallery .modal-content h3 {
+    font-size: 1em;
+  }
   #footer {
     text-align: center;
   }
 }
+
 
 .navbar {
   background-color: rgba(21, 31, 33, 0.8);
@@ -276,7 +284,8 @@ html, body {
   z-index: 1;
 }
 
-#gallery .modal-gallery-img {
+#gallery .modal-img {
+  max-width: 100%;
 
 }
 
@@ -292,9 +301,6 @@ html, body {
   color: white;
 }
 
-#gallery .modal-content {
-  padding-bottom: 20px;
-}
 
 
 /*WHY*/
