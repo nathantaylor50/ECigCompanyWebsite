@@ -276,7 +276,8 @@ html, body {
   z-index: 1;
 }
 
-#gallery .modal-gallery-img {
+#gallery .modal-img {
+  max-width: 100%;
 
 }
 
