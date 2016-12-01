@@ -43,6 +43,13 @@ html, body {
   #who img {
     margin-top: 50%;
   }
+  #gallery .modal-content button {
+    padding: 2px 4px;
+    font-size: 1em;
+  }
+  #gallery .modal-content h3 {
+    font-size: 1em;
+  }
   #footer {
     text-align: center;
   }
@@ -293,9 +300,6 @@ html, body {
   color: white;
 }
 
-#gallery .modal-content {
-  padding-bottom: 20px;
-}
 
 
 /*WHY*/
