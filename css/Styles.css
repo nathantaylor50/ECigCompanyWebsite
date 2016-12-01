@@ -29,7 +29,7 @@ html, body {
     text-align: center;
   }
   #header img {
-    margin: 20% auto 0;
+    margin: 40% auto 0;
   }
   #social {
     text-align: center;
@@ -54,6 +54,7 @@ html, body {
     text-align: center;
   }
 }
+
 
 .navbar {
   background-color: rgba(21, 31, 33, 0.8);
