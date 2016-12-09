@@ -9,7 +9,7 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-
+    <link rel="stylesheet" href="css/Styles2.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -18,17 +18,109 @@
     <![endif]-->
   </head>
   <body>
-    <section>
+    <section id="TitleCarousel">
       <div class="container">
         <div class="row">
+          <div class="col-md-12">
+            <div id="FVSCarousel" data-ride="carousel" class="carousel slide">
+              <ol class="carousel-indicators">
+                <li data-target="#FVSCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#FVSCarousel" data-slide-to="1"></li>
+                <li data-target="#FVSCarousel" data-slide-to="2"></li>
+              </ol>
+              <div role="listbox" class="carousel-inner">
+                <div class="item active">
+                  <div data-src="https://unsplash.it/800/400?random=1" class="carousel-item active">
+                    <div class="carousel-caption">
+                    <h3>first slide title</h3>
+                    <p>first slide text</p>
+                  </div>
+                </div>
 
+                <div data-src="https://unsplash.it/800/400?random=2" class="carousel-item">
+                  <div class="carousel-caption">
+                    <h3>second slide title</h3>
+                    <p>second slide text</p>
+                  </div>
+                </div>
+
+                <div data-src="https://unsplash.it/800/400?random=3" class="carousel-item">
+                  <div class="carousel-caption">
+                    <h3>third slide title</h3>
+                    <p>third slide text</p>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- Left and right controls -->
+              <a href="#FVSCarousel" role="button" data-slide="prev" class="left carousel-control">
+                <span aria-hidden="true" class="icon-prev"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a  href="#FVSCarousel" role="button" data-slide="next" class="right carousel-control">
+                <span aria-hidden="true" class="icon-next"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+
+            <div class="main-text hidden-xs">
+              <div class="col-md-12 text-center">
+                <h1>title</h1>
+                <h3>slogan</h3>
+              </div>
+            </div>
+
+          </div>
         </div>
+      </div>
+    </section>
 
+    <section id="insta">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="instagram" data-userid="189232245" data-limit="12">ig feed</div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="ageVerify">
+      <div class="modal fade" id="ageModal" tabindex="-1" role="dialog" aria-labelledby="ageModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="ageModalLabel">Age Verification</h4>
+            </div>
+            <div class="modal-body">
+              <h2>Adults only (18+)</h2>
+              <p>This Website contains adult products suitable for those 18 years or older.</p>
+              <p>Click Enter only if you are at least 18 years of age.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Enter</button>
+              <a href="https://google.com"><button type="button" class="btn btn-default">Exit</button></a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script src="js/js.cookie.js"></script>
+
+    <script type="text/javascript">
+        $(window).load(function(){
+            $('#ageModal').modal('show');
+
+        });
+    </script>
+
   </body>
 </html>

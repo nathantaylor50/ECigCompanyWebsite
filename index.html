@@ -11,47 +11,42 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:300,400,700" rel="stylesheet">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <link rel="stylesheet" href="css/Styles.css">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
     <link rel="stylesheet" href="css/animate.min.css">
+
   </head>
-  <body>
+  <body data-spy="scroll" data-target=".navbar">
+    <div id="navScroll">
+      <nav id="navbar" class="navbar navbar-fixed-top">
+        <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#navigation" name="button">
+          &#9776;
+        </button>
 
-    <nav class="navbar navbar-fixed-top">
+        <a class="navbar-brand float-xs-right float-sm-left" href="http://www.foggartys.com/"><img src="img/FVSLogo-Small.png" class="img-fluid"/></a>
 
-      <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#navigation" name="button">
-        &#9776;
-      </button>
-
-      <a class="navbar-brand float-xs-right float-sm-left" href="http://www.foggartys.com/"><img src="img/FVSLogo-Small.png" class="img-fluid"/></a>
-
-      <div class="collapse navbar-toggleable-xs" id="navigation">
-        <ul class="nav navbar-nav float-sm-right">
-          <li class="nav-item">
-              <a class="nav-link" href="#social">CONNECT</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="#who">WHO</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="#gallery">GALLERY</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="#why">WHY</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="#customers">CUSTOMERS</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="#contact">CONTACT</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="#location">LOCATION</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+        <div class="collapse navbar-toggleable-xs" id="navigation">
+          <ul class="nav navbar-nav float-sm-right" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link" href="#social">CONNECT</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#who">WHO</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#gallery">GALLERY</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">CONTACT</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#location">LOCATION</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
 
     <!-- HEADER -->
     <section id ="header">
@@ -59,23 +54,17 @@
         <div class="row">
           <div class="col-md-12 wow fadeIn" data-wow-delay="0.1s" data-wow-duration="2s">
             <img src="img/FVSlogo.png" class="img-fluid" />
-            <h2>SOMETHING SLOGAN HERE </h2>
-            <p class="lead">
-              Lorem ipsum dolor sit amet, vel quando facilisis ex, ut summo scaevola prodesset sea, eos cu amet mutat expetendis.
-            </p>
-            <p>
-              At nec minimum mnesarchum honestatis. Ex illud novum libris nec, adipisci periculis has ne.
-            </p>
+            <h2>Worthing's freshest vape store specialising in everything E-cigarette </h2>
+            <h5>
+              Offering a wealth of experience and advice for your purchase, or a place to have a coffee, a vape and a chat.
+            </h5>
           </div>
         </div>
         <div class="row wow fadeIn" data-wow-delay="0.1s" data-wow-duration="2.5s">
           <div class="col-md-12 text-xs-center wow swing" data-wow-delay="1s" data-wow-duration="0">
             <a href="#social"><i class="fa fa-chevron-down fa-3x" aria-hidden="true"></i></a>
-
           </div>
-
         </div>
-
       </div>
     </section>
     <!-- END HEADER -->
@@ -87,16 +76,14 @@
           <div class="col-md-6">
             <h2>Connect with us:</h2>
             <hr align="left" width="50%">
-            <p>At nec minimum mnesarchum honestatis. Ex illud novum libris nec, adipisci periculis has ne.</p>
+            <p>Check out our latest products, news and everything vape related on our official social media feeds</p>
 
           </div>
           <div class="col-md-6">
-            <ul class="list-inline">
-              <li class="list-inline-item"><a href="https://www.facebook.com/foggartysvaporstore/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-              <li class="list-inline-item"><a href="https://twitter.com/foggarty_s"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-              <li class="list-inline-item"><a href="https://www.instagram.com/foggartysvapor/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-              <li class="list-inline-item"><a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
-
+            <ul class="list-inline social-icons icon-circle icon-zoom list-unstyled">
+              <li class="list-inline-item wow fadeInRight" data-wow-delay="0.5s" data-wow-duration="1s"><a target="_blank" href="https://www.facebook.com/foggartysvaporstore/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+              <li class="list-inline-item wow fadeInRight" data-wow-delay="0.75s" data-wow-duration="0.75s"><a target="_blank" href="https://twitter.com/foggarty_s"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+              <li class="list-inline-item wow fadeInRight" data-wow-delay="1s" data-wow-duration="0.5s"><a target="_blank" href="https://www.instagram.com/foggartysvapor/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
             </ul>
           </div>
         </div>
@@ -104,20 +91,45 @@
     </section>
     <!-- END SOCIAL -->
 
+    <!-- Taster -->
+    <section id="TasterBar">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="TasterText edge-shadow-hard wow fadeIn" data-wow-delay="0.2s" data-wow-duration="1s">
+              <h2>Taster Bar:<span class="tag blue edge-shadow">New</span></h2>
+              <hr align="left" width=50%>
+              <p class="lead">WE SAY NO MORE TO PAPER ELIQUID MENU'S!!</p>
+              <p>We have a state of the art taster bar with a full digital menu for all of the
+                liquids we stock so finding your next Al lady vape is a breeze. And with over 75 premium flavours
+                to choose from we are sure you will find something to tantalise your taste buss. </p>
+                <h4>ONLINE STORE COMING SOON</h4>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img class="img-fluid wow fadeIn" data-wow-delay="0.2s" data-wow-duration="1s" src="img/fvsTasterMenu.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- END Taster -->
+
     <!-- WHO -->
     <section id="who">
       <div class="container">
         <div class="row">
-          <div class="col-md-6 wow fadeInLeft" data-wow-delay="0.5s" data-wow-duration="1s">
+          <div class="col-md-6 wow fadeInLeft" data-wow-delay="0.2s" data-wow-duration="1s">
             <h2>Who we are...</h2>
-            <hr allign="left" width="50%">
-            <p class="lead">At nec minimum mnesarchum honestatis. Ex illud novum libris nec, adipisci periculis has ne.</p>
-            <p>Lorem ipsum dolor sit amet, vel quando facilisis ex, ut summo scaevola prodesset sea, eos cu amet mutat expetendis.
-            Lorem ipsum dolor sit amet, vel quando facilisis ex, ut summo scaevola prodesset sea, eos cu amet mutat expetendis.</p>
-            <button type="button" class="btn btn-who">Find out more</button>
+            <hr align="left" width="50%">
+            <p class="lead">Foggarty's Vapor Store was born out of the necessity for a premium vape store in Worthing where,
+              from the minute you enter,  you feel welcome but can also browse at your leisure without having a sales assistant rushing you for a sale .</p>
+            <p>Foggarty's is quite the opposite! We encourage you to take your time and enjoy the experience.
+              If you want to chat,  Great!,  we love to chat but we also understand some times it nice to have a bit of piece and quite,
+              that's Cool too! And we will leave you to do your thing and make sure your transaction is a hassle free one. </p>
           </div>
-          <div class="col-md-6 wow fadeIn" data-wow-delay="0.5s" data-wow-duration="2s">
-            <img class="img-fluid" src="img/what-image.png" alt="" />
+          <div class="col-md-6 wow fadeIn" data-wow-delay="0.65s" data-wow-duration="1.5s">
+            <img class="img-fluid edge-shadow-hard" src="img/fvsStoreFront.jpg" alt="" />
           </div>
         </div>
       </div>
@@ -138,10 +150,10 @@
         </div>
         <div class="row">
           <div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay="0.1s" data-wow-duration="0.8s">
-            <div class="card">
+            <div class="card edge-shadow">
               <div class="gallery-img">
                 <a data-toggle="modal" href="#Modal1">
-                  <img class="card-img-top img-fluid" src="img/buildings.jpg" alt="Card image cap">
+                  <img class="card-img-top img-fluid" src="img/fvsSmokGear.jpg" alt="Card image cap">
                   <div class="img-overlay">
                   </div>
                 </a>
@@ -151,89 +163,159 @@
                 <div class="modal-dialog modal-lg">
 
                   <div class="modal-content">
-                      <div class="container text-xs-center">
-                          <div class="row">
-                              <div class="col-md-12">
-                                <div class="modal-header">
-                                  <button type="button" class="close" data-dismiss="modal">x</button>
-                                  <h3 class="modal-title">Image Title</h3>
-                                </div>
-                                  <div class="modal-body">
-                                      <img alt="" class="img-fluid img-centered modal-img"
-                                      src="img/buildings.jpg">
-                                  </div>
-                              </div>
+                    <div class="container text-xs-center">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">x</button>
+                          </div>
+                          <div class="modal-body">
+                            <img alt="" class="img-fluid img-centered modal-img"
+                            src="img/fvsSmokGear.jpg">
                           </div>
                           <div class="modal-footer text-xs-center">
                             <button type="button" class="btn btn-who"
                             data-dismiss="modal" type="button"><i class=
                             "fa fa-times"></i>Close</button>
                           </div>
+                        </div>
                       </div>
+                    </div>
                   </div>
                 </div>
               </div>
 
-
-
-
-
               <div class="card-block">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">High quality kits that offer both power and control</p>
               </div>
             </div>
           </div>
 
           <div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay="0.2s" data-wow-duration="0.8s">
-            <div class="card">
+            <div class="card edge-shadow">
               <div class="gallery-img">
-                <a href="#">
-                  <img class="card-img-top img-fluid" src="img/fair.jpg" alt="Card image cap">
+                <a data-toggle="modal" href="#Modal2">
+                  <img class="card-img-top img-fluid" src="img/fvsCircleColor.jpg" alt="Card image cap">
                   <div class="img-overlay">
                   </div>
                 </a>
               </div>
 
+              <div aria-hidden="true" class=" modal fade" id="Modal2" role="dialog" tabindex="-1">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="container text-xs-center">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">x</button>
+                          </div>
+                          <div class="modal-body">
+                            <img alt="" class="img-fluid img-centered modal-img"
+                            src="img/fvsCircleColor.jpg">
+                          </div>
+                          <div class="modal-footer text-xs-center">
+                            <button type="button" class="btn btn-who"
+                            data-dismiss="modal" type="button"><i class=
+                            "fa fa-times"></i>Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
               <div class="card-block">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">View our products via touchscreen for instant results</p>
               </div>
             </div>
           </div>
 
           <div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay="0.3s" data-wow-duration="0.8s">
-            <div class="card">
+            <div class="card edge-shadow">
               <div class="gallery-img">
-                <a href="#">
-                  <img class="card-img-top img-fluid" src="img/city.jpg" alt="Card image cap">
+                <a data-toggle="modal" href="#Modal3">
+                  <img class="card-img-top img-fluid" src="img/fvsSmokGear.jpg" alt="Card image cap">
                   <div class="img-overlay">
                   </div>
                 </a>
               </div>
 
+              <div aria-hidden="true" class=" modal fade" id="Modal3" role="dialog" tabindex="-1">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="container text-xs-center">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">x</button>
+                          </div>
+                          <div class="modal-body">
+                            <img alt="" class="img-fluid img-centered modal-img"
+                            src="img/fvsSmokGear.jpg">
+                          </div>
+                          <div class="modal-footer text-xs-center">
+                            <button type="button" class="btn btn-who"
+                            data-dismiss="modal" type="button"><i class=
+                            "fa fa-times"></i>Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
               <div class="card-block">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">High quality kits that offer both power and control</p>
               </div>
             </div>
           </div>
 
           <div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay="0.4s" data-wow-duration="0.8s">
-            <div class="card">
+            <div class="card edge-shadow">
               <div class="gallery-img">
-                <a href="#">
-                  <img class="card-img-top img-fluid" src="img/rose.jpg" alt="Card image cap">
+                <a data-toggle="modal" href="#Modal2">
+                  <img class="card-img-top img-fluid" src="img/fvsSmokGear.jpg" alt="Card image cap">
                   <div class="img-overlay">
                   </div>
                 </a>
               </div>
 
+              <div aria-hidden="true" class=" modal fade" id="Modal2" role="dialog" tabindex="-1">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="container text-xs-center">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">x</button>
+                          </div>
+                          <div class="modal-body">
+                            <img alt="" class="img-fluid img-centered modal-img"
+                            src="img/fvsSmokGear.jpg">
+                          </div>
+                          <div class="modal-footer text-xs-center">
+                            <button type="button" class="btn btn-who"
+                            data-dismiss="modal" type="button"><i class=
+                            "fa fa-times"></i>Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
               <div class="card-block">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">High quality kits that offer both power and control</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-
+    </div>
     </section>
 
     <!-- End Gallery -->
@@ -252,19 +334,19 @@
         </div>
         <div class="row">
           <div class="col-md-4 wow fadeInLeft" data-wow-delay="0.1s" data-wow-duration="1s">
-            <i class="fa fa-thumbs-o-up fa-3x" aria-hidden="true"></i>
+            <i class="fa fa-thumbs-o-up fa-3x flip" aria-hidden="true"></i>
             <h3>customer satisfaction</h3>
             <p>At nec minimum mnesarchum honestatis. Ex illud novum libris nec, adipisci periculis has ne.</p>
           </div>
 
           <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s" data-wow-duration="1s">
-            <i class="fa fa-line-chart fa-3x" aria-hidden="true"></i>
+            <i class="fa fa-line-chart fa-3x flip" aria-hidden="true"></i>
             <h3>Instant results</h3>
             <p>At nec minimum mnesarchum honestatis. Ex illud novum libris nec, adipisci periculis has ne.</p>
           </div>
 
           <div class="col-md-4 wow fadeInRight" data-wow-delay="0.1s" data-wow-duration="1s">
-            <i class="fa fa-trophy fa-3x" aria-hidden="true"></i>
+            <i class="fa fa-trophy fa-3x flip" aria-hidden="true"></i>
             <h3>top service</h3>
             <p>At nec minimum mnesarchum honestatis. Ex illud novum libris nec, adipisci periculis has ne.</p>
           </div>
@@ -302,20 +384,41 @@
             <div class="carousel-inner" role="listbox">
               <div class="carousel-item active">
                 <blockquote class="blockquote col-md-12">
-                  <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                  <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                  <p class="mb-0">I loved the feel of this shop, the people are lovely in there and will help you to find the right liquid for you and to give you a hand if needed.</p>
+                  <ul class="rating inline-ul">
+                    <li><i class="fa fa-star amber-text"></i></li>
+                    <li><i class="fa fa-star amber-text"></i></li>
+                    <li><i class="fa fa-star amber-text"></i></li>
+                    <li><i class="fa fa-star amber-text"></i></li>
+                    <li><i class="fa fa-star amber-text"></i></li>
+                  </ul>
+                  <footer class="blockquote-footer"><b>Emma Fowler</b><cite title="Source Title">  Facebook</cite></footer>
                 </blockquote>
               </div>
               <div class="carousel-item">
                 <blockquote class="blockquote col-md-12">
-                  <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                  <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                  <p class="mb-0">Foggarty's is amazing, tried lots of different flavors, and loved them all.Awesome customer service, going back very soon.</p>
+                  <ul class="rating inline-ul">
+                    <li><i class="fa fa-star amber-text"></i></li>
+                    <li><i class="fa fa-star amber-text"></i></li>
+                    <li><i class="fa fa-star amber-text"></i></li>
+                    <li><i class="fa fa-star amber-text"></i></li>
+                    <li><i class="fa fa-star amber-text"></i></li>
+                  </ul>
+                  <footer class="blockquote-footer"><b>Michael James Loveridge</b><cite title="Source Title">  Facebook</cite></footer>
                 </blockquote>
               </div>
               <div class="carousel-item">
                 <blockquote class="blockquote col-md-12">
-                  <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                  <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                  <p class="mb-0">The best store around to get kitted out with all your vaping needs! There's no need to go anywhere else because Foggartys has it all!</p>
+                  <ul class="rating inline-ul">
+                  <li><i class="fa fa-star amber-text"></i></li>
+                  <li><i class="fa fa-star amber-text"></i></li>
+                  <li><i class="fa fa-star amber-text"></i></li>
+                  <li><i class="fa fa-star amber-text"></i></li>
+                  <li><i class="fa fa-star amber-text"></i></li>
+                </ul>
+                  <footer class="blockquote-footer"><b>Eamonn Ali</b><cite title="Source Title">  Facebook</cite></footer>
                 </blockquote>
               </div>
             </div>
@@ -344,21 +447,24 @@
               <h5>14-16 Bath Place, Worthing</h5>
               <h5>BN11 3BA</h5>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 class="text-center"">
               <h3>Times open</h3>
-              <p>Monday: 00:00 - 00:00</p>
-              <p>Tuesday: 00:00 - 00:00</p>
-              <p>Wednesday: 00:00 - 00:00</p>
-              <p>Thursday: 00:00 - 00:00</p>
-              <p>Friday: 00:00 - 00:00</p>
-              <p>Saturday: 00:00 - 00:00</p>
-              <p>Sunday: 00:00 - 00:00</p>
+              <ul class="list-unstyled">
+                <li><span class="weekday" id="mon"><b>Monday</b> 00:00 - 00:00</span></li>
+                <li><span class="weekday" id="tues"><b>Tuesday</b> 00:00 - 00:00</span></li>
+                <li><span class="weekday" id="weds"><b>Wednesday</b> 00:00 - 00:00</span></li>
+                <li><span class="weekday" id="thurs"><b>Thursday</b> 00:00 - 00:00</span></li>
+                <li><span class="weekday" id="fri"><b>Friday</b> 00:00 - 00:00</span></li>
+                <li><span class="weekday" id="sat"><b>Saturday</b> 00:00 - 00:00</span></li>
+                <li><span class="weekday" id="sun"><b>Sunday</b> 00:00 - 00:00</span></li>
+              </ul>
+
          </div>
           </div>
           <div class="row">
             <div class="col-md-12">
               <div class="col-md-6">
-                <h3>Telephone: </h3>
+                <h3>Telephone: +44 07711 054386</h3>
               </div>
               <div class="col-md-6">
                 <h4>Email: info@foggartys.com</h4>
@@ -384,8 +490,8 @@
             <h2>Location</h2>
             <hr width="30%">
             <p class="lead">heres where we are!</p>
-            <div class="span8">
-              <iframe  class="wow fadeIn" data-wow-delay="0.8s" data-wow-duration="1.5s" width="50%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5042.291458025278!2d-0.3749692719081964!3d50.809938618106095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4875a283ca758a39%3A0xc18159e535c7a1e4!2s14-16+Bath+Pl%2C+Worthing+BN11+3BA!5e0!3m2!1sen!2suk!4v1479591084777"></iframe>
+            <div class="span">
+              <iframe class="wow fadeIn embed-respoonsive-item map edge-shadow-medium" data-wow-delay="0.8s" data-wow-duration="1.5s" width="75%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5042.291458025278!2d-0.3749692719081964!3d50.809938618106095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4875a283ca758a39%3A0xc18159e535c7a1e4!2s14-16+Bath+Pl%2C+Worthing+BN11+3BA!5e0!3m2!1sen!2suk!4v1479591084777"></iframe>
             </div>
           </div>
         </div>
@@ -402,24 +508,20 @@
           <div class="col-md-6">
             <h3>About Foggarty's Vapor Store</h3>
             <p>At nec minimum mnesarchum honestatis. Ex illud novum libris nec, adipisci periculis has neAt nec minimum mnesarchum honestatis. Ex illud novum libris nec,
-            adipisci periculis has neAt nec minimum mnesarchum honestatis.</p>
-            <p>
-              Ex illud novum libris nec, adipisci periculis has neAt nec minimum mnesarchum honestatis. Ex illud novum libris nec
-            </p>
+            .</p>
             <ul class="list-inline">
-              <li class="list-inline-item"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-              <li class="list-inline-item"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-              <li class="list-inline-item"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-              <li class="list-inline-item"><a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
+              <li class="list-inline-item"><a href="https://www.facebook.com/foggartysvaporstore/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+              <li class="list-inline-item"><a href="https://twitter.com/foggarty_s"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+              <li class="list-inline-item"><a href="https://www.instagram.com/foggartysvapor/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
             </ul>
 
           </div>
           <div class="col-md-6">
             <h3>say hello: </h3>
             <ul class="list-unstyled">
-              <li><p><strong><i class="fa fa-map-marker" aria-hidden="true"></i> Address:</strong> location, street, postcode </p></li>
-              <li><p><strong><i class="fa fa-envelope" aria-hidden="true"></i> Email:</strong> <a href="#">emailAddress . com </a></p></li>
-              <li><p><strong><i class="fa fa-phone" aria-hidden="true"></i> Phone:</strong> +012345678910</p></li>
+              <li><p><strong><i class="fa fa-map-marker" aria-hidden="true"></i> Address:</strong> 14-16 Bath Place, Worthing<, BN11 3BA</p></li>
+              <li><p><strong><i class="fa fa-envelope" aria-hidden="true"></i> Email:</strong> <a href="#">info@foggartys.com </a></p></li>
+              <li><p><strong><i class="fa fa-phone" aria-hidden="true"></i> Phone:</strong> +44 07711 054386</p></li>
             </ul>
           </div>
         </div>
@@ -440,8 +542,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
     <script src="js/wow.min.js"></script>
+    <script src="js/js.scroll.js" charset="utf-8"></script>
+
                   <script>
                   new WOW().init();
                   </script>
+                  <script>
+                  var today = new Date().getDay();
+
+                  $("#" + today).addClass("highlightDay");
+                  </script>
+
+
+
   </body>
 </html>
