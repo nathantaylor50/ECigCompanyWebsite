@@ -1,5 +1,6 @@
 html, body {
   height: 100%;
+  width: 100%;
   font-family: 'Alegreya Sans', sans-serif;
 
 }
@@ -152,6 +153,7 @@ html, body {
   /*background-color: #363636;*/
   background-size: cover;
   background-attachment: fixed;
+  background-position: bottom;
   height: 100%;
   color: white;
   display: flex;
