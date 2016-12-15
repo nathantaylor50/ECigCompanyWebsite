@@ -373,6 +373,10 @@ html, body {
   z-index: 1;
 }
 
+#gallery .modal {
+  z-index: 999;
+}
+
 
 #gallery .btn-who {
   background-color: #363636;
