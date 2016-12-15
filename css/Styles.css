@@ -307,7 +307,10 @@ html, body {
 }
 
 #store {
-  padding: 5rem 0;
+  padding: 2rem 0;
+  background-color: #363636;
+  color: white;
+  padding:  auto;
 }
 /*WHO*/
 
@@ -389,9 +392,24 @@ html, body {
 
 #why {
   padding: 5rem 0;
-  background-color: #f6f6f6;
+  background:url(../img/whyiceblur.jpg) center center no-repeat;
+  /*background-color: #363636;*/
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: bottom;
+  color: white;
+  display: flex;
+  align-items: center;
+  text-shadow: 1px 1px black;
   overflow: hidden;
 }
+
+#why .WhyText {
+    background: rgba(54,54,54,0.8);
+      color: white;
+        padding: 0.8rem;
+}
+
 
 #why .fa {
   color: #00a1a1;
@@ -425,6 +443,7 @@ html, body {
   right: 0;
   left: 0;
   background-color: rgba(29, 31, 32, 0.9);
+  z-index: 999;
 }
 
 #instagram .igviewer img {
