@@ -45,6 +45,9 @@ body {
   #social hr, #who hr {
     margin: 8% auto;
   }
+  #social .social-icons .fa {
+    margin-top: 10px;
+  }
   #who {
     text-align: center;
   }
@@ -68,13 +71,13 @@ body {
   #header container {
     margin: 10% auto 0;
   }
+  #social .social-icons .fa {
+    margin-top: 50px;
+  }
 }
 
 @media (min-width:992px) and (min-height:1000px) {
-  #gallery .modal-img {
-    max-width: 100%;
-    height: auto;
-  }
+
 }
 
 
@@ -226,7 +229,7 @@ body {
   height: 50px;
   line-height: 50px;
   text-align: center;
-  margin-top: 50px;
+  /*margin-top: 50px;*/
   margin-left: 10px;
   color: #FFF;
   color: rgba(255, 255, 255, 0.8);
@@ -314,9 +317,9 @@ body {
 }
 
 #store {
-  padding: 2rem 0;
+  padding: 1.5rem 0;
   background-color: #363636;
-  color: white;
+  color: #00a1a1;
   padding:  auto;
 }
 
@@ -497,7 +500,8 @@ body {
   background-size: 100%;
   width: 248px;
   height: 248px;
-  margin: 1px;
+  margin: 5px auto 5px auto;;
+  padding: 5px;
   overflow: hidden;
   transition: all 200ms ease;
   position: relative;
