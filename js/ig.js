@@ -70,18 +70,12 @@ ig.view = {
 
 ig.init();
 
-//scroll
-function noscroll() {
-  window.scrollTo(0,0);
-}
 
 //Listeners
 $('.instagram').on('click', '.image', function(){
   var img = this.dataset.img;
   ig.view.open(img);
-  window.addEventListener('scroll', noscroll);
 });
 $('.igviewer').on('click', function(){
   ig.view.close();
-  window.removeEventListener('scroll', noscroll);
 });
