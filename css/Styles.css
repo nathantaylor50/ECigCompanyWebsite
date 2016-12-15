@@ -5,6 +5,13 @@ html, body {
 
 }
 
+body {
+  padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+
+
 .btn {
   transition: all 0.3s ease-in-out;
 }
@@ -312,6 +319,13 @@ html, body {
   color: white;
   padding:  auto;
 }
+
+#store h1 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.5em;
+  word-spacing: 1px;
+}
 /*WHO*/
 
 #who {
@@ -335,7 +349,6 @@ html, body {
   width: 80%;
   height: auto;
   margin: auto;
-  display: block;
 }
 
 /*Gallery*/
@@ -564,8 +577,12 @@ html, body {
     background-color: white;
 }
 
+
+
 #contact .highlightDay {
-  color: blue;
+  color: #00a1a1;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 /* Location */
@@ -587,6 +604,11 @@ html, body {
   overflow: hidden;
 }
 
+#footer p {
+  letter-spacing: 1px;
+  font-size: 90%;
+}
+
 #footer a {
   color: white;
 }
@@ -597,4 +619,8 @@ html, body {
 
 #footer .fa {
   padding: 0 5px;
+}
+
+#footer .copyright {
+  color: grey;
 }
