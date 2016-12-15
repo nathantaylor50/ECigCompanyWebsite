@@ -51,6 +51,7 @@ html, body {
   #gallery .modal-content h3 {
     font-size: 1em;
   }
+
   #footer {
     text-align: center;
   }
@@ -190,20 +191,6 @@ html, body {
 #social {
   padding: 4.25rem 0;
 }
-
-/*#social .fa {
-  font-size: 1.5em;
-  color: #363636;
-  border: 2px solid #363636;
-  width: 60px;
-  height: 60px;
-  border-radius: 30%;
-  text-align: center;
-  padding: 30% 0;
-  margin-top: 10px;
-  transition: all 0.4s ease-in-out;
-}
-*/
 
 #social .fa:hover {
   color: white;
@@ -474,7 +461,7 @@ html, body {
   background-size: 100%;
   width: 248px;
   height: 248px;
-  margin: 4px;
+  margin: 1px;
   overflow: hidden;
   transition: all 200ms ease;
   position: relative;
@@ -484,6 +471,7 @@ html, body {
 #instagram .instagram .image .caption {
   display: none;
   position: absolute;
+  font-size: 95%;
   bottom: 0;
   left: 0;
   right: 0;
