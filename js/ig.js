@@ -8,8 +8,10 @@ ig.init = function() {
     args.container = $(this);
     args.userid = args.container.data('userid');
 
-    if ($(window).width() > 1000) {
+    if ($(window).width() > 1199) {
       args.limit = 8;
+    } else if ($(window).width() > 991)  {
+      args.limit = 6;
     } else {
       args.limit = 4;
     }
