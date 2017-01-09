@@ -76,50 +76,69 @@
       </div>
     </section>
 
-    <section id="insta">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="instagram" data-userid="189232245" data-limit="12">ig feed</div>
-
-          </div>
-        </div>
-      </div>
-    </section>
 
 
     <section id="ageVerify">
-      <div class="modal fade" id="ageModal" tabindex="-1" role="dialog" aria-labelledby="ageModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+      <div class="modal fade text-center" id="ageModal" tabindex="-1" role="dialog" aria-labelledby="ageModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h4 class="modal-title" id="ageModalLabel">Age Verification</h4>
+              <h2 class="modal-title">Age Verification Required</h2>
             </div>
             <div class="modal-body">
-              <h2>Adults only (18+)</h2>
-              <p>This Website contains adult products suitable for those 18 years or older.</p>
-              <p>Click Enter only if you are at least 18 years of age.</p>
+              <p>You must be 18 or over to access this website.</p>
+              <p>
+                if you are under 18 then you must leave
+              </p>
+
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Enter</button>
-              <a href="https://google.com"><button type="button" class="btn btn-default">Exit</button></a>
+                <button type="button" class="btn btn-success close" data-dismiss="modal">Enter</button>
+                <a href="https://google.com"><button type="button" class="btn btn-warning">Exit</button></a>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Cookie warning -->
+    <section id="cookie-warning">
+      <div class="cookies" style="display:none;">
+        <div class="container">
+          <div class="col-sm-12">
+            <p>We use Cookies to enchance your user experience.<a href="#">Find Out More.</a></p>
+            <a class="close-cookie-warning"><span>x</span></a>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- End Cookie warning -->
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
-    <script src="js/js.cookie.js"></script>
+        <script type="text/javascript" src="js/js.cookie.js"></script>
 
     <script type="text/javascript">
-        $(window).load(function(){
-            $('#ageModal').modal('show');
+    $(document).ready(function () {
 
+    //if cookie hasn't been set...
+    if (document.cookie.indexOf("ModalShown=true")<999999) {
+        $("#ageModal").modal("show");
+        //Modal has been shown, now set a cookie so it never comes back,
+        $(".close").click(function () {
+            $("#ageModal").modal("hide");
         });
+        document.cookie = "ModalShown=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/";
+    }
+    });
+
     </script>
 
   </body>

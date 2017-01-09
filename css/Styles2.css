@@ -26,19 +26,33 @@ body {
   position: relative;
 }
 
-.igviewer {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background-color: rgba(29, 31, 32, 0.9);
+#ageVerify .modal-content {
+  background-color: #363636;
 }
 
-.igviewer img {
-  display: block;
-  margin:  1rem auto;
-  height: calc(100vh - 2rem);
-  width: auto;
-  box-shadow: 0px 10px 40px 10px rgba(0, 0, 0, 0.8);
+#ageVerify .modal-header {
+  background-color: #2b2b2b;
+  border-bottom: 1px solid black;
+}
+
+
+#ageVerify h2 {
+  color: #00a1a1;
+}
+#ageVerify p {
+  color: white;
+}
+
+#ageVerify .modal-footer{
+    border-top: 1px solid #363636;
+    text-align: center;
+}
+
+#ageVerify .modal-footer .btn {
+  padding-left: 50px;
+  padding-right: 50px;
+  margin: 0 20px 0 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
