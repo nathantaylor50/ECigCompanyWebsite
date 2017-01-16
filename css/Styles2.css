@@ -26,6 +26,20 @@ body {
   position: relative;
 }
 
+@@media only screen and (min-width: 1025px) {
+  #cookie-warning .cookies .container {
+    height: 40px;
+  }
+}
+
+@@media only screen and (max-width: 767px) {
+  .mobile-hidden {
+    display: none;
+  }
+}
+
+
+
 #ageVerify .modal-content {
   background-color: #363636;
 }
@@ -55,4 +69,58 @@ body {
   font-size: 16px;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+#cookie-warning .cookies {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  padding: 10px 0;
+  color: #fff;
+  font-size: 12px;
+  line-height: 16px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing:border-box;
+  box-sizing: border-box;
+  background: rgba(0, 74, 151, 0.9);
+}
+
+#cookie-warning .cookies .container {
+  position: relative;
+}
+
+#cookie-warning .cookies .container div {
+  padding-left: 60px;
+  padding-right: 10px;
+}
+
+#cookie-warning .cookies a {
+  color: #fff;
+  text-decoration: underline;
+  border: none;
+}
+
+#cookie-warning .cookies a.close-cookie-warning {
+  position: absolute;
+  left: 15px;
+  top: 0;
+  display:block;
+  background-color: #004a87;
+  color: #fff;
+  padding:  9px 5px;
+  cursor: pointer;
+  font-size: 4rem;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  border: none;
+  text-decoration: none;
+}
+
+#cookie-warning .cookies a.close-cookie-warning:hover {
+  background-color: #fff;
+  color: #2f99cd;
+  border-bottom: none;
 }
