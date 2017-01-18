@@ -78,7 +78,21 @@ $(".close-cookie-warning").on("click", function() {
 //  $.cookie('HideCookieMessage', 'true', { expires: 1, path: '/'});
   $('div.cookies').hide();
 });
+
+$(".close-ageModal").on("click", function() {
+	var date = new Date();
+	var minutes = 0.5;
+	date.setTime(date.getTime() + (minutes * 60 * 1000));
+	$.cookie('HideAgeModal', 'true', { expires: date, path: '/'});
+	$('')
+});
+
 (function ($) {
   if ($.cookie('HideCookieMessage')) { $('.cookies').hide(); } else {
+    $('.cookies').show(); }
+})(jQuery);
+
+(function ($) {
+  if ($.cookie('HideAgeModal')) { $('.cookies').hide(); } else {
     $('.cookies').show(); }
 })(jQuery);
