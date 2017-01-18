@@ -33,7 +33,7 @@
 
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-success" data-dismiss="modal">Enter</button>
+                <button type="button" class="btn btn-success close-ageModal" data-dismiss="modal">Enter</button>
                 <a href="https://google.com"><button type="button" class="btn btn-warning">Exit</button></a>
             </div>
           </div>
@@ -67,7 +67,7 @@
     $(document).ready(function () {
 
     //if cookie hasn't been set...
-    if (document.cookie.indexOf("ModalShown=true")<999999) {
+    if (document.cookie.indexOf("HideAgeModal=true")<999999) {
         $("#ageModal").modal("show");
 
     }
