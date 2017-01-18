@@ -93,6 +93,6 @@ $(".close-ageModal").on("click", function() {
 })(jQuery);
 
 (function ($) {
-  if ($.cookie('HideAgeModal')) { $('.cookies').hide(); } else {
-    $('.cookies').show(); }
+  if ($.cookie('HideAgeModal')) { $("#ageModal").modal("hide"); } else {
+    $("#ageModal").modal("show"); }
 })(jQuery);
